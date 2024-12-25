@@ -18,7 +18,7 @@
           
                 try {
                     Class.forName("com.mysql.jdbc.Driver");
-                   Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fbank", "root", "");
+                   Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/federalbank", "root", "");
                    PreparedStatement  ps = con.prepareStatement("INSERT INTO customerdata VALUES (?,?,?,?)");
                     ps.setString(1, name);
                     ps.setString(2, email);
